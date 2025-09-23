@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161619;
+    color: white;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #161619;
+    padding: 20px;
+    box-shadow: 2px 6px 13px 6px rgba(0, 0, 0, 0.68);
+    gap: 30px;
+}
+
+.menu_principal{
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-mapa {
+    width: 100%;
+    max-width: 800px; 
+    background-color: #161619; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 4px dashed rgb(0, 110, 255);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.container-titulo{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.container-titulo h1{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.mapa-site ul {
+    list-style: none;
+    margin-top: 8px;
+    text-indent: 40px;
+}
+.mapa-site ul li::before{
+    content: "└─";
+    color: rgb(78, 78, 219) ;
+    left: 10;
+
+}

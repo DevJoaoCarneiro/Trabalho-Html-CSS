@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161619;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #161619;
+    padding: 20px;
+    box-shadow: 2px 6px 13px 6px rgba(0, 0, 0, 0.68);
+    gap: 30px;
+}
+
+.menu_principal{
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo-principal {
+    padding: 4rem 2rem;
+}
+
+.cabecalho-pagina {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cabecalho-pagina h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-testemunhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-testemunho:hover{
+    transform: scale(1.1);
+}
+
+.card-testemunho {
+    background-color: rgb(152, 153, 168);
+    border-radius: 10px;
+    padding: 2.5rem;
+    max-width: 380px;
+    border-top: 4px solid rgb(50, 137, 219);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-testemunho::before {
+    content: '“';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 6rem;
+    color: #161619;
+    z-index: 1;
+}
+
+.texto-depoimento {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.autor-depoimento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    border-top: 2px dashed #161619;
+    padding-top: 1.5rem;
+}
+
+.autor-depoimento img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-autor h4 {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    color: var(--text-title);
+}
+
+.info-autor p {
+    margin: 0;
+    font-size: 0.9rem;
+}
