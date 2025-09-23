@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/Img/2599.jpg);
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 40px;
+}
+
+.botao_container{
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(94, 94, 94);
+}
+
+.botao_container:hover{
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

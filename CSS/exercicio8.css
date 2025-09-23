@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #e9ddd1;
+    color: white;
+}
+
+main{
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3c49d;
+    padding: 20px;
+    box-shadow: 2px 6px 13px 6px rgba(211, 206, 140, 0.68);
+    gap: 30px;
+}
+
+.menu_principal{
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.portfolio-menu{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    width: 70%;
+    gap: 20px;
+ 
+}
+
+.portfolio-item{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 550px;
+    background-color: white;
+    text-overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.imagem_fundo {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    opacity: 80%;
+}
+
+.cabecalho{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    color: #ffffff;
+}
+.texto_escondido{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+     transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover .texto_escondido{
+    opacity: 1;
+
+}
+
+.portfolio-item:hover .imagem_fundo{
+    opacity: 1;
+    transform: scale(1.1);
+}
