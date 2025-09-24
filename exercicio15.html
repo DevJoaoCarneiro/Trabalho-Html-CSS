@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exercicio15.css">
+    <title>Exercicio15</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="titulo">
+            <h1>Produto Em Oferta</h1>
+        </div>
+        
+        <div class="container_produto">
+            <img src="Img/xadrez.webp" alt="Imagem de um produto de xadrez">
+            <div class="container_texto">
+                <h4>Um maravilhoso xadrez feito de madeira com peças feitas a mão</h4>
+                <p>Contagem Regressiva para Lançar</p>
+                <div id="contador">10</div>
+            </div>
+        </div>
+
+        <button class="botao_comprar" onclick="botao_comprar" id="botao">Comprar Agora</button>
+        
+    </main>
+
+    <script>
+        const elementoContador = document.getElementById('contador');
+        const botao = document.getElementById('botao');
+        let lancamento = 10;
+        elementoContador.innerHTML = lancamento;
+
+        const intervalo = setInterval(() => {
+            lancamento--;
+            elementoContador.innerHTML = lancamento;
+            if (lancamento <= 0) {
+                clearInterval(intervalo);
+                elementoContador.innerHTML = "Produto Lançado";
+            }
+        }, 1000);
+
+        botao.addEventListener('click', () =>{
+            alert("Adicionado no carrinho com sucesso!!");
+
+        })
+    </script>
+</body>
+
+</html>
